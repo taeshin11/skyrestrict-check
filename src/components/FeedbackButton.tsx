@@ -1,32 +1,78 @@
 'use client';
 
 import { useState } from 'react';
+import Button from '@/components/ui/Button';
 
 export default function FeedbackButton() {
   const [open, setOpen] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [message, setMessage] = useState('');
+  const [type, setType] = useState('suggestion');
+
+  const handleSend = () => {
+    const subject = encodeURIComponent(`[${type}] SkyRestrict Check Feedback`);
+    const body = encodeURIComponent(message);
+    window.open(`mailto:taeshinkim11@gmail.com?subject=${subject}&body=${body}`, '_blank');
+    setSent(true);
+    setTimeout(() => { setSent(false); setOpen(false); setMessage(''); }, 3000);
+  };
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {open && (
-        <div className="mb-3 bg-white rounded-xl shadow-lg border border-[#E2E8F0] p-4 w-72 animate-in">
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="font-bold text-sm text-[#1A202C]">Send Feedback</h3>
-            <button onClick={() => setOpen(false)} className="text-[#94A3B8] hover:text-[#1A202C] text-lg leading-none">&times;</button>
+        <div className="mb-3 bg-white rounded-2xl shadow-2xl border border-[#E2E8F0] w-80 overflow-hidden">
+          <div className="bg-gradient-to-r from-[#1A202C] to-[#2D3748] px-5 py-3 flex items-center justify-between">
+            <h3 className="font-bold text-sm text-white">Send Feedback</h3>
+            <button onClick={() => setOpen(false)} className="text-white/60 hover:text-white text-xl leading-none">&times;</button>
           </div>
-          <p className="text-xs text-[#64748B] mb-3">
-            Have a suggestion or found an issue? Let us know!
-          </p>
-          <a
-            href="mailto:taeshinkim11@gmail.com?subject=SkyRestrict%20Check%20Feedback&body=Hi%2C%0A%0AI%20have%20the%20following%20feedback%3A%0A%0A"
-            className="block w-full text-center px-4 py-2 bg-[#3B82F6] hover:bg-[#2563EB] text-white text-sm font-medium rounded-lg transition-colors"
-          >
-            Open Email
-          </a>
+          <div className="p-5">
+            {sent ? (
+              <div className="text-center py-4">
+                <svg className="w-12 h-12 text-green-500 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-sm font-medium text-[#1A202C]">Thank you for your feedback!</p>
+              </div>
+            ) : (
+              <>
+                <div className="flex gap-2 mb-3">
+                  {['suggestion', 'bug', 'content'].map((t) => (
+                    <button
+                      key={t}
+                      onClick={() => setType(t)}
+                      className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
+                        type === t
+                          ? 'bg-[#3B82F6] text-white'
+                          : 'bg-[#F1F5F9] text-[#64748B] hover:bg-[#E2E8F0]'
+                      }`}
+                    >
+                      {t === 'suggestion' ? 'Suggestion' : t === 'bug' ? 'Bug Report' : 'Content Request'}
+                    </button>
+                  ))}
+                </div>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="What would you like to see improved?"
+                  rows={3}
+                  className="w-full px-3 py-2 rounded-xl border border-[#E2E8F0] bg-[#F8F9FA] text-sm text-[#1A202C] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent resize-none mb-3"
+                />
+                <Button
+                  onClick={handleSend}
+                  disabled={!message.trim()}
+                  size="sm"
+                  className="w-full"
+                >
+                  Send Feedback
+                </Button>
+              </>
+            )}
+          </div>
         </div>
       )}
       <button
         onClick={() => setOpen(!open)}
-        className="w-12 h-12 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3B82F6]"
+        className="group w-12 h-12 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-full shadow-lg shadow-blue-500/30 flex items-center justify-center transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3B82F6]"
         aria-label="Send feedback"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -30,12 +30,25 @@ export default function NotamCard({ notam }: NotamCardProps) {
         </div>
       </div>
 
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="mt-3 text-sm text-[#3B82F6] hover:text-[#2563EB] font-medium focus:outline-none focus:underline"
-      >
-        {expanded ? 'Hide Full Text ▲' : 'View Full Text ▼'}
-      </button>
+      <div className="flex items-center gap-4 mt-3">
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="text-sm text-[#3B82F6] hover:text-[#2563EB] font-medium focus:outline-none focus:underline"
+        >
+          {expanded ? 'Hide Full Text ▲' : 'View Full Text ▼'}
+        </button>
+        <button
+          onClick={() => {
+            const text = `${notam.notamId} — ${notam.region}: ${notam.description}`;
+            const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent('https://skyrestrict-check.vercel.app')}`;
+            window.open(url, '_blank', 'width=600,height=400');
+          }}
+          className="text-xs text-[#94A3B8] hover:text-[#1DA1F2] transition-colors"
+          aria-label="Share this NOTAM"
+        >
+          Share
+        </button>
+      </div>
 
       {expanded && (
         <pre className="notam-text mt-3 p-3 bg-[#F8F9FA] rounded-lg border border-[#E2E8F0] overflow-x-auto">

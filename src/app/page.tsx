@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import AdBanner from '@/components/layout/AdBanner';
 import DynamicMap from '@/components/map/DynamicMap';
 import NotamFeed from '@/components/notam/NotamFeed';
 import ReportForm from '@/components/ReportForm';
+import ShareButtons from '@/components/ShareButtons';
 import Card from '@/components/ui/Card';
 import { getNotams } from '@/lib/notam';
 import noFlyZonesData from '@/data/noFlyZones.json';
@@ -49,6 +51,9 @@ export default function Home() {
               </svg>
               Explore the Map
             </a>
+            <div className="mt-6">
+              <ShareButtons className="justify-center" />
+            </div>
           </div>
         </section>
 
@@ -143,6 +148,58 @@ export default function Home() {
             </p>
             <ReportForm />
           </Card>
+        </section>
+
+        {/* SEO Content Section — drives long-tail traffic */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card>
+              <h2 className="text-xl font-bold text-[#1A202C] mb-3">Understanding No-Fly Zones</h2>
+              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+                No-fly zones are designated areas where aircraft are prohibited from flying. They are established
+                by governments or international organizations due to armed conflicts, military exercises, natural
+                disasters, or security threats. Currently, major no-fly zones include airspace over Ukraine (closed
+                since February 2022), North Korea (permanently closed), and Afghanistan (limited services since 2021).
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+                Airlines reroute flights around these zones, often adding hours to journey times and increasing fuel
+                costs. Understanding which zones are active helps travelers anticipate delays and choose optimal routes.
+              </p>
+              <Link href="/how-to-use" className="text-sm text-[#3B82F6] hover:underline font-medium">
+                Learn how to read our map &rarr;
+              </Link>
+            </Card>
+
+            <Card>
+              <h2 className="text-xl font-bold text-[#1A202C] mb-3">What Are NOTAMs?</h2>
+              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+                NOTAM (Notice to Air Missions) is an official notice filed with aviation authorities to alert pilots
+                of potential hazards along flight routes. NOTAMs cover airspace restrictions, airport closures,
+                military exercises, and navigation aid changes.
+              </p>
+              <p className="text-sm text-[#475569] leading-relaxed mb-3">
+                Our tracker monitors {notams.length} active conflict-zone NOTAMs across {activeRegions} regions,
+                classified by severity: Critical (total closure), High (airlines rerouting), Medium (caution
+                advisories), and Low (informational).
+              </p>
+              <Link href="/about" className="text-sm text-[#3B82F6] hover:underline font-medium">
+                Learn more about SkyRestrict Check &rarr;
+              </Link>
+            </Card>
+          </div>
+
+          {/* Last updated indicator */}
+          <div className="mt-6 text-center">
+            <p className="text-xs text-[#94A3B8]">
+              Data last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              {' '}&bull;{' '}
+              <Link href="/privacy" className="hover:text-[#3B82F6] transition-colors">Privacy</Link>
+              {' '}&bull;{' '}
+              <Link href="/terms" className="hover:text-[#3B82F6] transition-colors">Terms</Link>
+              {' '}&bull;{' '}
+              <Link href="/about" className="hover:text-[#3B82F6] transition-colors">About</Link>
+            </p>
+          </div>
         </section>
 
         {/* Ad Banner - Bottom */}

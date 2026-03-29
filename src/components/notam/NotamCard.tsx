@@ -1,0 +1,47 @@
+'use client';
+
+import { useState } from 'react';
+import { NotamEntry } from '@/types';
+import Badge from '@/components/ui/Badge';
+
+interface NotamCardProps {
+  notam: NotamEntry;
+}
+
+export default function NotamCard({ notam }: NotamCardProps) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-[#E2E8F0] p-5 hover:shadow-md transition-shadow">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-amber-500 text-lg">&#9888;</span>
+            <span className="font-bold text-[#1A202C] text-sm">{notam.notamId}</span>
+            <Badge variant={notam.severity}>{notam.severity.toUpperCase()}</Badge>
+          </div>
+          <div className="space-y-1 text-sm text-[#64748B]">
+            <p><strong>Region:</strong> {notam.region} FIR ({notam.fir})</p>
+            <p><strong>Type:</strong> {notam.type}</p>
+            <p><strong>Effective:</strong> {notam.effectiveFrom} → {notam.effectiveTo}</p>
+            <p><strong>Max FL:</strong> {notam.maxFL}</p>
+          </div>
+          <p className="mt-2 text-sm text-[#475569]">{notam.description}</p>
+        </div>
+      </div>
+
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="mt-3 text-sm text-[#3B82F6] hover:text-[#2563EB] font-medium focus:outline-none focus:underline"
+      >
+        {expanded ? 'Hide Full Text ▲' : 'View Full Text ▼'}
+      </button>
+
+      {expanded && (
+        <pre className="notam-text mt-3 p-3 bg-[#F8F9FA] rounded-lg border border-[#E2E8F0] overflow-x-auto">
+          {notam.fullText}
+        </pre>
+      )}
+    </div>
+  );
+}

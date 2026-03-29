@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ukraine",
+        "name": "Ukraine Conflict Zone",
+        "region": "Eastern Europe",
+        "authority": "Ukrainian ANSP / Eurocontrol",
+        "severity": "total",
+        "effectiveFrom": "2022-02-24",
+        "effectiveTo": null,
+        "reason": "Total airspace closure due to armed conflict between Russia and Ukraine."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[22.13, 44.38], [40.22, 44.38], [40.22, 52.38], [22.13, 52.38], [22.13, 44.38]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iraq-syria",
+        "name": "Iraq / Syria Conflict Zone",
+        "region": "Middle East",
+        "authority": "ORBB / OSTT FIR",
+        "severity": "high-risk",
+        "effectiveFrom": "2014-06-01",
+        "effectiveTo": "2025-12-31",
+        "reason": "Risk from anti-aviation weaponry. Airlines advised to avoid low-altitude operations."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[35.7, 29.0], [48.6, 29.0], [48.6, 37.4], [35.7, 37.4], [35.7, 29.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "iran",
+        "name": "Iran Caution Zone",
+        "region": "Middle East",
+        "authority": "OIIX FIR",
+        "severity": "caution",
+        "effectiveFrom": "2024-04-15",
+        "effectiveTo": "2025-12-31",
+        "reason": "Heightened military activity. Exercise caution for overflights."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[44.0, 25.0], [63.3, 25.0], [63.3, 39.8], [44.0, 39.8], [44.0, 25.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "north-korea",
+        "name": "North Korea Total Airspace Closure",
+        "region": "East Asia",
+        "authority": "ZKKP FIR",
+        "severity": "total",
+        "effectiveFrom": "2017-01-01",
+        "effectiveTo": null,
+        "reason": "Complete airspace closure to all international civil aviation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[124.2, 37.7], [130.7, 37.7], [130.7, 43.0], [124.2, 43.0], [124.2, 37.7]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "libya",
+        "name": "Libya Conflict Zone",
+        "region": "North Africa",
+        "authority": "HLLL FIR",
+        "severity": "high-risk",
+        "effectiveFrom": "2014-07-01",
+        "effectiveTo": "2025-12-31",
+        "reason": "Armed conflict risk. Airlines advised to reroute around Tripoli FIR."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[9.3, 19.5], [25.2, 19.5], [25.2, 33.2], [9.3, 33.2], [9.3, 19.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yemen",
+        "name": "Yemen / Red Sea Conflict Zone",
+        "region": "Middle East",
+        "authority": "OYSC FIR",
+        "severity": "high-risk",
+        "effectiveFrom": "2024-01-10",
+        "effectiveTo": "2025-06-30",
+        "reason": "Houthi anti-ship and anti-aviation activity in Red Sea corridor and Yemen airspace."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[41.8, 12.0], [54.0, 12.0], [54.0, 19.0], [41.8, 19.0], [41.8, 12.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ethiopia-eritrea",
+        "name": "Ethiopia / Eritrea (Tigray Region)",
+        "region": "East Africa",
+        "authority": "HAAA FIR",
+        "severity": "caution",
+        "effectiveFrom": "2020-11-04",
+        "effectiveTo": "2025-06-30",
+        "reason": "Residual conflict risk in Tigray region. Limited ATC reliability."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.4, 12.0], [43.2, 12.0], [43.2, 18.0], [36.4, 18.0], [36.4, 12.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "somalia",
+        "name": "Somalia (Al-Shabaab Areas)",
+        "region": "East Africa",
+        "authority": "HCSM FIR",
+        "severity": "high-risk",
+        "effectiveFrom": "2020-01-01",
+        "effectiveTo": "2025-12-31",
+        "reason": "Security threat from Al-Shabaab in southern regions. Risk to low-altitude operations."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[40.9, -1.7], [51.4, -1.7], [51.4, 12.0], [40.9, 12.0], [40.9, -1.7]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "afghanistan",
+        "name": "Afghanistan Full Airspace",
+        "region": "Central/South Asia",
+        "authority": "OAKX FIR",
+        "severity": "total",
+        "effectiveFrom": "2021-08-15",
+        "effectiveTo": null,
+        "reason": "Limited ATC services. High risk for all aviation operations under Taliban control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[60.5, 29.4], [74.9, 29.4], [74.9, 38.5], [60.5, 38.5], [60.5, 29.4]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "myanmar",
+        "name": "Myanmar Civil Conflict",
+        "region": "Southeast Asia",
+        "authority": "VYYY FIR",
+        "severity": "caution",
+        "effectiveFrom": "2021-02-01",
+        "effectiveTo": "2025-12-31",
+        "reason": "Civil unrest may affect ATC services. Exercise caution for overflights."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[92.2, 9.8], [101.2, 9.8], [101.2, 28.5], [92.2, 28.5], [92.2, 9.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sudan",
+        "name": "Sudan Civil War Zone",
+        "region": "North Africa",
+        "authority": "HSSS FIR",
+        "severity": "high-risk",
+        "effectiveFrom": "2023-04-15",
+        "effectiveTo": null,
+        "reason": "Extreme risk due to ongoing civil war between SAF and RSF forces."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[21.8, 8.7], [38.6, 8.7], [38.6, 22.2], [21.8, 22.2], [21.8, 8.7]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mali-sahel",
+        "name": "Mali / Sahel Region",
+        "region": "West Africa",
+        "authority": "GABS FIR",
+        "severity": "caution",
+        "effectiveFrom": "2023-01-01",
+        "effectiveTo": "2025-12-31",
+        "reason": "Sahel security situation. Military operations may affect civil aviation."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-12.2, 10.1], [4.3, 10.1], [4.3, 25.0], [-12.2, 25.0], [-12.2, 10.1]]]
+      }
+    }
+  ]
+}

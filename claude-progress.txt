@@ -1,0 +1,14 @@
+# SkyRestrict Check — Progress Log
+# Updated by Claude Code after each feature completion.
+
+## Current Status
+- Last completed feature: None
+- Next feature: F01
+- Blockers: None
+
+## Completed Features
+(none yet)
+
+## Session Log
+- [2026-03-29 11:00] Session started. Reading PRD.md...
+- [2026-03-29 11:00] F01: Project scaffolding in progress

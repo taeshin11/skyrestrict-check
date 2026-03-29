@@ -23,7 +23,7 @@ export default function AdBanner({ adKey, width, height, className }: AdBannerPr
       ) : (
         <div
           className="bg-gray-100 border border-dashed border-gray-300 rounded-xl flex items-center justify-center text-gray-400 text-sm"
-          style={{ width: Math.min(width, typeof window !== 'undefined' ? window.innerWidth - 32 : width), height }}
+          style={{ maxWidth: '100%', width, height }}
         >
           Ad Space — {width}&times;{height}
         </div>

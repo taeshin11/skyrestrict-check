@@ -1,8 +1,7 @@
 'use client';
 
-import { GeoJSON, Popup } from 'react-leaflet';
+import { GeoJSON } from 'react-leaflet';
 import { getSeverityColor, getSeverityLabel } from '@/lib/noFlyZones';
-import Badge from '@/components/ui/Badge';
 import type { Layer, LeafletEvent } from 'leaflet';
 
 interface NoFlyZoneLayerProps {

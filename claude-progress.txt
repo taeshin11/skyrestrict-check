@@ -2,8 +2,8 @@
 # Updated by Claude Code after each feature completion.
 
 ## Current Status
-- Last completed feature: F09
-- Next feature: F10
+- Last completed feature: F11
+- Next feature: None — all features complete
 - Blockers: None
 
 ## Completed Features
@@ -16,9 +16,14 @@
 - F07: Google Sheets Webhook Data Collection ✓
 - F08: Adsterra Ad Integration ✓
 - F09: SEO Optimization & Meta Tags ✓
+- F10: Vercel Deployment ✓
+- F11: Final QA & Polish ✓
 
 ## Session Log
 - [2026-03-29 11:00] Session started. Reading PRD.md...
 - [2026-03-29 11:00] F01-F09: All features implemented in initial build
 - [2026-03-29 11:15] GitHub repo created: taeshin11/skyrestrict-check
-- [2026-03-29 11:15] Build passes successfully
+- [2026-03-29 11:20] Deployed to Vercel: https://skyrestrict-check.vercel.app
+- [2026-03-29 11:20] Short link created: https://is.gd/Ma7CTT
+- [2026-03-29 11:25] F11: QA fixes — CTA button, unused imports, AdBanner SSR safety
+- [2026-03-29 11:25] All 11 features complete. Build passes clean.

@@ -9,7 +9,7 @@
     { "id": "F07", "name": "Google Sheets Webhook (Apps Script) Data Collection", "status": "done", "priority": 7, "milestone": true },
     { "id": "F08", "name": "Adsterra Ad Integration", "status": "done", "priority": 8, "milestone": true },
     { "id": "F09", "name": "SEO Optimization & Meta Tags", "status": "done", "priority": 9, "milestone": false },
-    { "id": "F10", "name": "Vercel Deployment with Custom Short Link", "status": "pending", "priority": 10, "milestone": true },
-    { "id": "F11", "name": "Final QA, Performance Audit & Polish", "status": "pending", "priority": 11, "milestone": true }
+    { "id": "F10", "name": "Vercel Deployment with Custom Short Link", "status": "done", "priority": 10, "milestone": true },
+    { "id": "F11", "name": "Final QA, Performance Audit & Polish", "status": "done", "priority": 11, "milestone": true }
   ]
 }

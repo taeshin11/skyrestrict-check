@@ -1,14 +1,14 @@
 {
   "features": [
-    { "id": "F01", "name": "Project Scaffolding & GitHub Repo", "status": "in-progress", "priority": 1, "milestone": true },
-    { "id": "F02", "name": "Landing Page with Responsive Layout & Soft Theme", "status": "pending", "priority": 2, "milestone": true },
-    { "id": "F03", "name": "Interactive Map with No-Fly Zone Overlays", "status": "pending", "priority": 3, "milestone": true },
-    { "id": "F04", "name": "NOTAM Data Feed & Display", "status": "pending", "priority": 4, "milestone": true },
-    { "id": "F05", "name": "OpenSky Network API Integration (Aircraft Density)", "status": "pending", "priority": 5, "milestone": true },
-    { "id": "F06", "name": "Visitor Counter (Today + Total)", "status": "pending", "priority": 6, "milestone": false },
-    { "id": "F07", "name": "Google Sheets Webhook (Apps Script) Data Collection", "status": "pending", "priority": 7, "milestone": true },
-    { "id": "F08", "name": "Adsterra Ad Integration", "status": "pending", "priority": 8, "milestone": true },
-    { "id": "F09", "name": "SEO Optimization & Meta Tags", "status": "pending", "priority": 9, "milestone": false },
+    { "id": "F01", "name": "Project Scaffolding & GitHub Repo", "status": "done", "priority": 1, "milestone": true },
+    { "id": "F02", "name": "Landing Page with Responsive Layout & Soft Theme", "status": "done", "priority": 2, "milestone": true },
+    { "id": "F03", "name": "Interactive Map with No-Fly Zone Overlays", "status": "done", "priority": 3, "milestone": true },
+    { "id": "F04", "name": "NOTAM Data Feed & Display", "status": "done", "priority": 4, "milestone": true },
+    { "id": "F05", "name": "OpenSky Network API Integration (Aircraft Density)", "status": "done", "priority": 5, "milestone": true },
+    { "id": "F06", "name": "Visitor Counter (Today + Total)", "status": "done", "priority": 6, "milestone": false },
+    { "id": "F07", "name": "Google Sheets Webhook (Apps Script) Data Collection", "status": "done", "priority": 7, "milestone": true },
+    { "id": "F08", "name": "Adsterra Ad Integration", "status": "done", "priority": 8, "milestone": true },
+    { "id": "F09", "name": "SEO Optimization & Meta Tags", "status": "done", "priority": 9, "milestone": false },
     { "id": "F10", "name": "Vercel Deployment with Custom Short Link", "status": "pending", "priority": 10, "milestone": true },
     { "id": "F11", "name": "Final QA, Performance Audit & Polish", "status": "pending", "priority": 11, "milestone": true }
   ]

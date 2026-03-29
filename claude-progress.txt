@@ -2,13 +2,23 @@
 # Updated by Claude Code after each feature completion.
 
 ## Current Status
-- Last completed feature: None
-- Next feature: F01
+- Last completed feature: F09
+- Next feature: F10
 - Blockers: None
 
 ## Completed Features
-(none yet)
+- F01: Project Scaffolding & GitHub Repo ✓
+- F02: Landing Page with Responsive Layout & Soft Theme ✓
+- F03: Interactive Map with No-Fly Zone Overlays ✓
+- F04: NOTAM Data Feed & Display ✓
+- F05: OpenSky Network API Integration ✓
+- F06: Visitor Counter (Today + Total) ✓
+- F07: Google Sheets Webhook Data Collection ✓
+- F08: Adsterra Ad Integration ✓
+- F09: SEO Optimization & Meta Tags ✓
 
 ## Session Log
 - [2026-03-29 11:00] Session started. Reading PRD.md...
-- [2026-03-29 11:00] F01: Project scaffolding in progress
+- [2026-03-29 11:00] F01-F09: All features implemented in initial build
+- [2026-03-29 11:15] GitHub repo created: taeshin11/skyrestrict-check
+- [2026-03-29 11:15] Build passes successfully

@@ -24,6 +24,10 @@
   --font-mono: var(--font-jetbrains-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F8F9FA;
   background-image: linear-gradient(135deg, #F8F9FA 0%, #EDF2F7 100%);

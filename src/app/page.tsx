@@ -8,6 +8,11 @@ import Card from '@/components/ui/Card';
 import { getNotams } from '@/lib/notam';
 import noFlyZonesData from '@/data/noFlyZones.json';
 
+// Adsterra ad unit keys
+const AD_KEY_728x90 = '9efb95d6943d83714fd826945b7a94d7';
+const AD_KEY_320x50 = 'f8b13b800086425ff3446f71d1ee25e0';
+const AD_KEY_300x250 = 'cf2221eb1efd5678d9253fe0fe7684ff';
+
 export default function Home() {
   const notams = getNotams();
   const zones = noFlyZonesData.features;
@@ -49,18 +54,8 @@ export default function Home() {
 
         {/* Ad Banner - Top */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AdBanner
-            adKey={process.env.NEXT_PUBLIC_ADSTERRA_KEY_TOP}
-            width={728}
-            height={90}
-            className="hidden md:flex"
-          />
-          <AdBanner
-            adKey={process.env.NEXT_PUBLIC_ADSTERRA_KEY_TOP}
-            width={320}
-            height={50}
-            className="md:hidden"
-          />
+          <AdBanner adKey={AD_KEY_728x90} width={728} height={90} className="hidden md:flex" />
+          <AdBanner adKey={AD_KEY_320x50} width={320} height={50} className="md:hidden" />
         </div>
 
         {/* Interactive Map */}
@@ -125,6 +120,11 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Sidebar Ad - Desktop only */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hidden lg:flex justify-end pb-4">
+          <AdBanner adKey={AD_KEY_300x250} width={300} height={250} />
+        </div>
+
         {/* NOTAM Feed */}
         <section id="notam-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h2 className="text-2xl font-bold text-[#1A202C] mb-2">NOTAM Alerts</h2>
@@ -147,18 +147,8 @@ export default function Home() {
 
         {/* Ad Banner - Bottom */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AdBanner
-            adKey={process.env.NEXT_PUBLIC_ADSTERRA_KEY_BOTTOM}
-            width={728}
-            height={90}
-            className="hidden md:flex"
-          />
-          <AdBanner
-            adKey={process.env.NEXT_PUBLIC_ADSTERRA_KEY_BOTTOM}
-            width={320}
-            height={100}
-            className="md:hidden"
-          />
+          <AdBanner adKey={AD_KEY_728x90} width={728} height={90} className="hidden md:flex" />
+          <AdBanner adKey={AD_KEY_320x50} width={320} height={50} className="md:hidden" />
         </div>
       </main>
 

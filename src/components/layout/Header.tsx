@@ -1,12 +1,20 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (isHome) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${id}`;
+    }
     setMenuOpen(false);
   };
 
@@ -14,12 +22,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-[#1A202C] text-[#F1F5F9] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
             <svg className="w-8 h-8 text-[#3B82F6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
             </svg>
             <span className="text-xl font-bold tracking-tight">SkyRestrict Check</span>
-          </div>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -29,9 +37,8 @@ export default function Header() {
             <button onClick={() => scrollTo('notam-section')} className="hover:text-[#3B82F6] transition-colors focus:outline-none focus:text-[#3B82F6]">
               NOTAMs
             </button>
-            <button onClick={() => scrollTo('report-section')} className="hover:text-[#3B82F6] transition-colors focus:outline-none focus:text-[#3B82F6]">
-              Report
-            </button>
+            <Link href="/about" className="hover:text-[#3B82F6] transition-colors">About</Link>
+            <Link href="/how-to-use" className="hover:text-[#3B82F6] transition-colors">FAQ</Link>
           </nav>
 
           {/* Mobile hamburger */}
@@ -60,9 +67,12 @@ export default function Header() {
           <button onClick={() => scrollTo('notam-section')} className="block w-full text-left py-2 px-3 rounded-lg hover:bg-white/10 transition-colors">
             NOTAMs
           </button>
-          <button onClick={() => scrollTo('report-section')} className="block w-full text-left py-2 px-3 rounded-lg hover:bg-white/10 transition-colors">
-            Report
-          </button>
+          <Link href="/about" onClick={() => setMenuOpen(false)} className="block w-full py-2 px-3 rounded-lg hover:bg-white/10 transition-colors">
+            About
+          </Link>
+          <Link href="/how-to-use" onClick={() => setMenuOpen(false)} className="block w-full py-2 px-3 rounded-lg hover:bg-white/10 transition-colors">
+            FAQ
+          </Link>
         </nav>
       )}
     </header>

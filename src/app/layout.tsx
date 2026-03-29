@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import FeedbackButton from '@/components/FeedbackButton';
 import './globals.css';
 
 const inter = Inter({
@@ -60,7 +61,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <FeedbackButton />
+      </body>
     </html>
   );
 }

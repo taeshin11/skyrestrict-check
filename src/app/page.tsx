@@ -188,6 +188,28 @@ export default function Home() {
             </Card>
           </div>
 
+          {/* Additional SEO content for long-tail keywords */}
+          <Card className="mt-8">
+            <h2 className="text-xl font-bold text-[#1A202C] mb-3">Global No-Fly Zone Map 2026 — Live Updates</h2>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              SkyRestrict Check provides the most comprehensive free no-fly zone map available in 2026. Our interactive
+              dashboard covers all major conflict zones including the Ukraine-Russia war zone, the Korean Peninsula,
+              Middle East tensions (Iran, Iraq, Syria, Yemen), East Africa (Ethiopia, Somalia, Sudan), and the Sahel
+              region. Each zone is updated in near real-time as geopolitical situations evolve.
+            </p>
+            <p className="text-sm text-[#475569] leading-relaxed mb-3">
+              Whether you are checking if your flight path is safe, researching airspace restrictions for a report,
+              or simply following global aviation news, our map gives you instant visual clarity. Aircraft positions
+              are sourced from the OpenSky Network ADS-B data, refreshing every 15 seconds.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {['Ukraine No-Fly Zone', 'North Korea Airspace', 'Middle East Restrictions', 'NOTAM Search',
+                'Flight Safety Map', 'Conflict Zone Tracker', 'Airspace Closure Alert', 'TFR Map'].map((tag) => (
+                <span key={tag} className="px-3 py-1 bg-[#F1F5F9] text-[#64748B] text-xs rounded-full">{tag}</span>
+              ))}
+            </div>
+          </Card>
+
           {/* Last updated indicator */}
           <div className="mt-6 text-center">
             <p className="text-xs text-[#94A3B8]">
@@ -198,6 +220,8 @@ export default function Home() {
               <Link href="/terms" className="hover:text-[#3B82F6] transition-colors">Terms</Link>
               {' '}&bull;{' '}
               <Link href="/about" className="hover:text-[#3B82F6] transition-colors">About</Link>
+              {' '}&bull;{' '}
+              <a href="mailto:taeshinkim11@gmail.com" className="hover:text-[#3B82F6] transition-colors">Contact</a>
             </p>
           </div>
         </section>

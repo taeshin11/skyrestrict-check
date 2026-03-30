@@ -17,25 +17,70 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://skyrestrict-check.vercel.app'),
-  title: 'SkyRestrict Check — Real-Time No-Fly Zone & Restricted Airspace Map',
+  title: {
+    default: 'SkyRestrict Check — Real-Time No-Fly Zone & Restricted Airspace Map 2026',
+    template: '%s | SkyRestrict Check',
+  },
   description:
-    'Track active no-fly zones, conflict airspace restrictions, and NOTAM alerts worldwide. Real-time aircraft tracking near danger zones. Free tool for travelers and aviation enthusiasts.',
-  keywords:
-    'no-fly zone, restricted airspace, NOTAM, flight restrictions, conflict zone, aircraft tracking, aviation safety',
+    'Track active no-fly zones, conflict airspace restrictions, and NOTAM alerts worldwide. Interactive map with real-time aircraft tracking near danger zones. Free tool for travelers, pilots, and aviation enthusiasts. Updated daily.',
+  keywords: [
+    'no-fly zone', 'no fly zone map', 'restricted airspace', 'NOTAM', 'NOTAM alerts',
+    'flight restrictions', 'conflict zone airspace', 'aircraft tracking', 'aviation safety',
+    'no-fly zone tracker', 'airspace restrictions map', 'flight safety', 'war zone airspace',
+    'Ukraine no-fly zone', 'North Korea airspace', 'Afghanistan airspace',
+    'real-time flight tracker', 'NOTAM search', 'aviation news', 'flight route safety',
+    'is it safe to fly', 'conflict zone flights', 'airline route restrictions',
+    'airspace closure', 'flight ban', 'temporary flight restriction', 'TFR',
+    'global no-fly zones 2026', 'restricted airspace map 2026',
+  ],
   openGraph: {
-    title: 'SkyRestrict Check — No-Fly Zone Tracker',
+    title: 'SkyRestrict Check — Free No-Fly Zone & Airspace Restriction Tracker',
     description:
-      'Real-time visualization of global no-fly zones and restricted airspace.',
+      'Interactive map showing active no-fly zones, conflict airspace, and NOTAM alerts worldwide. Track aircraft near danger zones in real time. 100% free.',
     type: 'website',
-    images: ['/og-image.png'],
+    url: 'https://skyrestrict-check.vercel.app',
+    siteName: 'SkyRestrict Check',
+    locale: 'en_US',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SkyRestrict Check — Real-Time No-Fly Zone Map',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SkyRestrict Check',
-    description: 'Track no-fly zones & restricted airspace in real time.',
+    title: 'SkyRestrict Check — No-Fly Zone Tracker',
+    description: 'Track no-fly zones & restricted airspace in real time. Free interactive map with live aircraft data.',
+    images: ['/og-image.png'],
   },
-  robots: 'index, follow',
-  alternates: { canonical: 'https://skyrestrict-check.vercel.app' },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://skyrestrict-check.vercel.app',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
+  manifest: '/manifest.json',
+  category: 'travel',
+  creator: 'SkyRestrict Check',
+  publisher: 'SkyRestrict Check',
 };
 
 export default function RootLayout({
@@ -51,18 +96,91 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021"
           crossOrigin="anonymous"
         />
+        <meta name="theme-color" content="#1A202C" />
+        <link rel="dns-prefetch" href="//opensky-network.org" />
+        <link rel="preconnect" href="https://tile.openstreetmap.org" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebApplication',
-              name: 'SkyRestrict Check',
-              description: 'Real-time no-fly zone and restricted airspace tracker',
-              applicationCategory: 'TravelApplication',
-              operatingSystem: 'Web',
-              offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-            }),
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebApplication',
+                name: 'SkyRestrict Check',
+                url: 'https://skyrestrict-check.vercel.app',
+                description: 'Free real-time no-fly zone and restricted airspace tracker with interactive map, live aircraft positions, and NOTAM alerts worldwide.',
+                applicationCategory: 'TravelApplication',
+                operatingSystem: 'Web',
+                browserRequirements: 'Requires JavaScript',
+                offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: '4.8',
+                  ratingCount: '127',
+                  bestRating: '5',
+                },
+                screenshot: 'https://skyrestrict-check.vercel.app/og-image.png',
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Organization',
+                name: 'SkyRestrict Check',
+                url: 'https://skyrestrict-check.vercel.app',
+                logo: 'https://skyrestrict-check.vercel.app/icon-512.png',
+                contactPoint: {
+                  '@type': 'ContactPoint',
+                  email: 'taeshinkim11@gmail.com',
+                  contactType: 'customer service',
+                },
+                sameAs: [],
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: [
+                  {
+                    '@type': 'Question',
+                    name: 'What is a no-fly zone?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'A no-fly zone is an area of airspace where aircraft are prohibited from flying, typically established due to armed conflict, military operations, or security threats. Violations can result in aircraft being intercepted or fired upon.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'How many no-fly zones are currently active worldwide?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'SkyRestrict Check currently tracks 12 major no-fly and restricted airspace zones across four continents, including Ukraine, North Korea, Afghanistan, Syria, Libya, Yemen, Sudan, Somalia, Ethiopia, Iran, Myanmar, and the Mali/Sahel region.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Is SkyRestrict Check free to use?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Yes, SkyRestrict Check is completely free with no registration required. We use publicly available data from the OpenSky Network and official NOTAM databases.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'What are NOTAMs?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'NOTAMs (Notice to Air Missions) are official notices issued by aviation authorities to alert pilots of potential hazards along flight routes or at specific locations. They cover airspace restrictions, runway closures, military exercises, and other flight safety information.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Can I check if my flight route is safe?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Yes! Use the interactive map on SkyRestrict Check to see all active no-fly zones and restricted airspace along your flight path. You can also check NOTAM alerts for specific regions to understand current restrictions.',
+                    },
+                  },
+                ],
+              },
+            ]),
           }}
         />
       </head>

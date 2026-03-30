@@ -7,22 +7,28 @@ export default function FeedbackButton() {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
   const [type, setType] = useState('suggestion');
 
   const handleSend = () => {
-    const subject = encodeURIComponent(`[${type}] SkyRestrict Check Feedback`);
-    const body = encodeURIComponent(message);
-    window.open(`mailto:taeshinkim11@gmail.com?subject=${subject}&body=${body}`, '_blank');
+    const typeLabel = type === 'suggestion' ? 'Suggestion' : type === 'bug' ? 'Bug Report' : 'Content Request';
+    const subject = encodeURIComponent(`[${typeLabel}] SkyRestrict Check Feedback`);
+    const bodyParts = [];
+    bodyParts.push(message);
+    if (email) bodyParts.push(`\n\nReply to: ${email}`);
+    bodyParts.push(`\n\n---\nSent from SkyRestrict Check (${new Date().toISOString().split('T')[0]})`);
+    const body = encodeURIComponent(bodyParts.join(''));
+    window.location.href = `mailto:taeshinkim11@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
-    setTimeout(() => { setSent(false); setOpen(false); setMessage(''); }, 3000);
+    setTimeout(() => { setSent(false); setOpen(false); setMessage(''); setEmail(''); }, 3000);
   };
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {open && (
-        <div className="mb-3 bg-white rounded-2xl shadow-2xl border border-[#E2E8F0] w-80 overflow-hidden">
+        <div className="mb-3 bg-white rounded-2xl shadow-2xl border border-[#E2E8F0] w-80 overflow-hidden animate-in">
           <div className="bg-gradient-to-r from-[#1A202C] to-[#2D3748] px-5 py-3 flex items-center justify-between">
-            <h3 className="font-bold text-sm text-white">Send Feedback</h3>
+            <h3 className="font-bold text-sm text-white">Suggest Improvements</h3>
             <button onClick={() => setOpen(false)} className="text-white/60 hover:text-white text-xl leading-none">&times;</button>
           </div>
           <div className="p-5">
@@ -31,7 +37,7 @@ export default function FeedbackButton() {
                 <svg className="w-12 h-12 text-green-500 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <p className="text-sm font-medium text-[#1A202C]">Thank you for your feedback!</p>
+                <p className="text-sm font-medium text-[#1A202C]">Thank you! Your email client will open.</p>
               </div>
             ) : (
               <>
@@ -57,6 +63,13 @@ export default function FeedbackButton() {
                   rows={3}
                   className="w-full px-3 py-2 rounded-xl border border-[#E2E8F0] bg-[#F8F9FA] text-sm text-[#1A202C] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent resize-none mb-3"
                 />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email (optional, for follow-up)"
+                  className="w-full px-3 py-2 rounded-xl border border-[#E2E8F0] bg-[#F8F9FA] text-sm text-[#1A202C] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent mb-3"
+                />
                 <Button
                   onClick={handleSend}
                   disabled={!message.trim()}
@@ -65,6 +78,9 @@ export default function FeedbackButton() {
                 >
                   Send Feedback
                 </Button>
+                <p className="text-[10px] text-[#94A3B8] mt-2 text-center">
+                  Opens your email client to send to our team
+                </p>
               </>
             )}
           </div>
@@ -73,7 +89,8 @@ export default function FeedbackButton() {
       <button
         onClick={() => setOpen(!open)}
         className="group w-12 h-12 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-full shadow-lg shadow-blue-500/30 flex items-center justify-center transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3B82F6]"
-        aria-label="Send feedback"
+        aria-label="Suggest improvements"
+        title="Suggest improvements"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />

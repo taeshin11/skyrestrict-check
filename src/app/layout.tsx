@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
-import FeedbackButton from '@/components/FeedbackButton';
 import './globals.css';
 
 const inter = Inter({
@@ -89,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}>
+    <html className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`} suppressHydrationWarning>
       <head>
         <script
           async
@@ -143,7 +142,7 @@ export default function RootLayout({
                     name: 'What is a no-fly zone?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'A no-fly zone is an area of airspace where aircraft are prohibited from flying, typically established due to armed conflict, military operations, or security threats. Violations can result in aircraft being intercepted or fired upon.',
+                      text: 'A no-fly zone is an area of airspace where aircraft are prohibited from flying, typically established due to armed conflict, military operations, or security threats.',
                     },
                   },
                   {
@@ -151,7 +150,7 @@ export default function RootLayout({
                     name: 'How many no-fly zones are currently active worldwide?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'SkyRestrict Check currently tracks 12 major no-fly and restricted airspace zones across four continents, including Ukraine, North Korea, Afghanistan, Syria, Libya, Yemen, Sudan, Somalia, Ethiopia, Iran, Myanmar, and the Mali/Sahel region.',
+                      text: 'SkyRestrict Check currently tracks 12 major no-fly and restricted airspace zones across four continents.',
                     },
                   },
                   {
@@ -159,23 +158,7 @@ export default function RootLayout({
                     name: 'Is SkyRestrict Check free to use?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Yes, SkyRestrict Check is completely free with no registration required. We use publicly available data from the OpenSky Network and official NOTAM databases.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'What are NOTAMs?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'NOTAMs (Notice to Air Missions) are official notices issued by aviation authorities to alert pilots of potential hazards along flight routes or at specific locations. They cover airspace restrictions, runway closures, military exercises, and other flight safety information.',
-                    },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'Can I check if my flight route is safe?',
-                    acceptedAnswer: {
-                      '@type': 'Answer',
-                      text: 'Yes! Use the interactive map on SkyRestrict Check to see all active no-fly zones and restricted airspace along your flight path. You can also check NOTAM alerts for specific regions to understand current restrictions.',
+                      text: 'Yes, SkyRestrict Check is completely free with no registration required.',
                     },
                   },
                 ],
@@ -186,7 +169,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         {children}
-        <FeedbackButton />
       </body>
     </html>
   );

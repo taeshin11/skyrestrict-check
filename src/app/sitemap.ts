@@ -1,13 +1,29 @@
 import { MetadataRoute } from 'next';
+import { i18n } from '@/i18n/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://skyrestrict-check.vercel.app';
   const now = new Date();
-  return [
-    { url: baseUrl, lastModified: now, changeFrequency: 'hourly', priority: 1.0 },
-    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${baseUrl}/how-to-use`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${baseUrl}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+  const pages = [
+    { path: '', changeFrequency: 'hourly' as const, priority: 1.0 },
+    { path: '/about', changeFrequency: 'weekly' as const, priority: 0.8 },
+    { path: '/how-to-use', changeFrequency: 'weekly' as const, priority: 0.9 },
+    { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.3 },
+    { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.3 },
   ];
+
+  const entries: MetadataRoute.Sitemap = [];
+
+  for (const locale of i18n.locales) {
+    for (const page of pages) {
+      entries.push({
+        url: `${baseUrl}/${locale}${page.path}`,
+        lastModified: now,
+        changeFrequency: page.changeFrequency,
+        priority: page.priority,
+      });
+    }
+  }
+
+  return entries;
 }

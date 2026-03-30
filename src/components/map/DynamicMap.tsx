@@ -1,6 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import type { Dictionary } from '@/i18n/getDictionary';
 
 const MapContainer = dynamic(() => import('./MapContainer'), {
   ssr: false,
@@ -17,6 +18,10 @@ const MapContainer = dynamic(() => import('./MapContainer'), {
   ),
 });
 
-export default function DynamicMap() {
-  return <MapContainer />;
+interface DynamicMapProps {
+  dict: Dictionary;
+}
+
+export default function DynamicMap({ dict }: DynamicMapProps) {
+  return <MapContainer dict={dict} />;
 }

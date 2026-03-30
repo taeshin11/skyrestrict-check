@@ -7,8 +7,13 @@ import AircraftLayer from './AircraftLayer';
 import MapLegend from './MapLegend';
 import noFlyZonesData from '@/data/noFlyZones.json';
 import { useState } from 'react';
+import type { Dictionary } from '@/i18n/getDictionary';
 
-export default function MapContainerComponent() {
+interface MapContainerProps {
+  dict: Dictionary;
+}
+
+export default function MapContainerComponent({ dict }: MapContainerProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = () => {
@@ -41,12 +46,10 @@ export default function MapContainerComponent() {
         <AircraftLayer />
       </LeafletMapContainer>
 
-      {/* Legend */}
       <div className="absolute bottom-4 right-4 z-[1000]">
-        <MapLegend />
+        <MapLegend dict={dict} />
       </div>
 
-      {/* Fullscreen button */}
       <button
         onClick={toggleFullscreen}
         className="absolute top-4 right-4 z-[1000] bg-white/95 backdrop-blur-sm rounded-lg p-2 shadow-md hover:bg-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#3B82F6]"

@@ -3,13 +3,16 @@
 import { useState } from 'react';
 import { NotamEntry } from '@/types';
 import Badge from '@/components/ui/Badge';
+import type { Dictionary } from '@/i18n/getDictionary';
 
 interface NotamCardProps {
   notam: NotamEntry;
+  dict: Dictionary;
 }
 
-export default function NotamCard({ notam }: NotamCardProps) {
+export default function NotamCard({ notam, dict }: NotamCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const t = dict.notamFeed;
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-[#E2E8F0] p-5 hover:shadow-md transition-shadow">
@@ -21,10 +24,10 @@ export default function NotamCard({ notam }: NotamCardProps) {
             <Badge variant={notam.severity}>{notam.severity.toUpperCase()}</Badge>
           </div>
           <div className="space-y-1 text-sm text-[#64748B]">
-            <p><strong>Region:</strong> {notam.region} FIR ({notam.fir})</p>
-            <p><strong>Type:</strong> {notam.type}</p>
-            <p><strong>Effective:</strong> {notam.effectiveFrom} → {notam.effectiveTo}</p>
-            <p><strong>Max FL:</strong> {notam.maxFL}</p>
+            <p><strong>{t.region}:</strong> {notam.region} FIR ({notam.fir})</p>
+            <p><strong>{t.type}:</strong> {notam.type}</p>
+            <p><strong>{t.effective}:</strong> {notam.effectiveFrom} → {notam.effectiveTo}</p>
+            <p><strong>{t.maxFL}:</strong> {notam.maxFL}</p>
           </div>
           <p className="mt-2 text-sm text-[#475569]">{notam.description}</p>
         </div>
@@ -35,7 +38,7 @@ export default function NotamCard({ notam }: NotamCardProps) {
           onClick={() => setExpanded(!expanded)}
           className="text-sm text-[#3B82F6] hover:text-[#2563EB] font-medium focus:outline-none focus:underline"
         >
-          {expanded ? 'Hide Full Text ▲' : 'View Full Text ▼'}
+          {expanded ? `${t.hideFullText} ▲` : `${t.viewFullText} ▼`}
         </button>
         <button
           onClick={() => {
@@ -44,9 +47,9 @@ export default function NotamCard({ notam }: NotamCardProps) {
             window.open(url, '_blank', 'width=600,height=400');
           }}
           className="text-xs text-[#94A3B8] hover:text-[#1DA1F2] transition-colors"
-          aria-label="Share this NOTAM"
+          aria-label={t.share}
         >
-          Share
+          {t.share}
         </button>
       </div>
 

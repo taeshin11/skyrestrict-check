@@ -107,7 +107,7 @@ export default function Footer({ lang, dict }: FooterProps) {
         </div>
 
         <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#64748B]">
-          <span>&copy; {new Date().getFullYear()} SkyRestrict Check. {dict.footer.disclaimer}</span>
+          <span>&copy; 2025 SkyRestrict Check. {dict.footer.disclaimer}</span>
           <div className="flex gap-4">
             <Link href={`/${lang}/privacy`} className="hover:text-[#3B82F6] transition-colors">{dict.footer.privacyShort}</Link>
             <Link href={`/${lang}/terms`} className="hover:text-[#3B82F6] transition-colors">{dict.footer.termsShort}</Link>

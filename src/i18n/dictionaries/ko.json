@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "언어"
+  },
+  "meta": {
+    "aboutTitle": "SkyRestrict Check 소개 — 비행금지구역 트래커",
+    "aboutDescription": "무료 실시간 비행금지구역 및 제한 공역 트래커인 SkyRestrict Check에 대해 알아보세요. 인터랙티브 지도, NOTAM 알림, 실시간 항공기 데이터를 제공합니다.",
+    "howToUseTitle": "SkyRestrict Check 사용법 — 가이드 & FAQ",
+    "howToUseDescription": "인터랙티브 비행금지구역 지도 사용법, NOTAM 알림 검색, 구역 보고서 제출 방법에 대한 단계별 가이드. 자주 묻는 질문 포함.",
+    "privacyTitle": "개인정보 처리방침 — SkyRestrict Check",
+    "privacyDescription": "SkyRestrict Check의 개인정보 처리방침. 비행금지구역 추적 서비스 이용 시 정보 수집, 사용 및 보호 방법을 알아보세요.",
+    "termsTitle": "이용약관 — SkyRestrict Check",
+    "termsDescription": "SkyRestrict Check 이용약관. 공역 데이터 정확성 및 책임 제한에 관한 중요 고지사항."
+  },
+  "privacyPage": {
+    "title": "개인정보 처리방침",
+    "lastUpdated": "최종 업데이트: 2026년 3월 29일",
+    "introTitle": "1. 소개",
+    "introText": "SkyRestrict Check(\"당사\")은 skyrestrict-check.vercel.app(\"서비스\")에서 웹사이트를 운영합니다. 본 개인정보 처리방침은 당사 웹사이트를 방문할 때 정보를 수집, 사용, 공개 및 보호하는 방법을 설명합니다. 서비스를 이용함으로써 본 정책에 따른 정보 수집 및 사용에 동의하는 것으로 간주합니다.",
+    "collectTitle": "2. 수집하는 정보",
+    "collectAuto": "자동으로 수집되는 정보:",
+    "collectAutoText": "서비스에 접속하면 IP 주소, 브라우저 유형, 운영 체제, 참조 URL, 조회한 페이지를 포함한 장치 정보가 자동으로 수집될 수 있습니다.",
+    "collectVoluntary": "자발적으로 제공하는 정보:",
+    "collectVoluntaryText": "양식을 통해 구역 보고서를 제출하는 경우 구역 이름, 지역, 설명, 심각도 평가 및 선택적으로 이메일 주소를 포함한 제공 정보를 수집합니다.",
+    "collectUsage": "사용 데이터:",
+    "collectUsageText": "방문자를 이해하고 서비스를 개선하기 위해 익명 방문자 수를 추적합니다.",
+    "cookiesTitle": "3. 쿠키 및 추적 기술",
+    "cookiesIntro": "사용자 경험 향상을 위해 쿠키 및 유사 추적 기술을 사용합니다.",
+    "cookiesEssential": "필수 쿠키:",
+    "cookiesEssentialText": "웹사이트가 올바르게 작동하는 데 필요합니다.",
+    "cookiesAnalytics": "분석 쿠키:",
+    "cookiesAnalyticsText": "방문자가 웹사이트와 어떻게 상호작용하는지 이해하는 데 사용됩니다.",
+    "cookiesAds": "광고 쿠키:",
+    "cookiesAdsText": "광고 파트너가 맞춤형 광고를 제공하기 위해 쿠키를 사용할 수 있습니다.",
+    "rightsTitle": "4. 귀하의 권리",
+    "rightsText": "개인 데이터에 대한 접근, 수정 또는 삭제 권리가 있을 수 있습니다. 이러한 권리를 행사하려면 다음으로 연락해 주세요:",
+    "contactTitle": "5. 문의하기",
+    "contactText": "본 개인정보 처리방침에 대한 질문이 있으시면 다음으로 연락해 주세요:"
+  },
+  "termsPage": {
+    "title": "이용약관",
+    "lastUpdated": "최종 업데이트: 2026년 3월 29일",
+    "acceptTitle": "1. 약관 동의",
+    "acceptText": "SkyRestrict Check(\"서비스\")에 접속하고 이용함으로써 본 이용약관에 동의하는 것으로 간주합니다. 동의하지 않으시면 서비스를 이용하지 마세요.",
+    "disclaimerTitle": "2. 중요 면책사항",
+    "disclaimerWarning": "본 서비스는 비행 계획 또는 운항 항공 목적으로 사용하기 위한 것이 아닙니다.",
+    "disclaimerText": "제공되는 정보는 다양한 공개 출처에서 수집되었으며 오류나 오래된 정보를 포함할 수 있습니다. 조종사와 항공 운영자는 반드시 공식 출처를 참조해야 합니다.",
+    "liabilityTitle": "3. 책임 제한",
+    "liabilityText": "서비스는 어떠한 종류의 보증도 없이 \"있는 그대로\" 제공됩니다. 법률이 허용하는 최대 범위에서 SKYRESTRICT CHECK은 서비스 사용으로 인한 어떠한 손해에 대해서도 책임지지 않습니다.",
+    "contactTitle": "4. 문의",
+    "contactText": "본 약관에 대한 질문이 있으시면 다음으로 연락해 주세요:"
   }
 }

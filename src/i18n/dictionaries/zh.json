@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "语言"
+  },
+  "meta": {
+    "aboutTitle": "关于 SkyRestrict Check — 禁飞区追踪器",
+    "aboutDescription": "了解 SkyRestrict Check，一个免费的实时禁飞区和限制空域追踪器，提供交互式地图、NOTAM 警报和实时航班数据。",
+    "howToUseTitle": "如何使用 SkyRestrict Check — 指南和常见问题",
+    "howToUseDescription": "交互式禁飞区地图使用指南、NOTAM 警报浏览、区域报告提交的分步说明。包含常见问题解答。",
+    "privacyTitle": "隐私政策 — SkyRestrict Check",
+    "privacyDescription": "SkyRestrict Check 隐私政策。了解我们在您使用禁飞区追踪服务时如何收集、使用和保护您的信息。",
+    "termsTitle": "服务条款 — SkyRestrict Check",
+    "termsDescription": "SkyRestrict Check 服务条款。关于空域数据准确性和责任限制的重要免责声明。"
+  },
+  "privacyPage": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：2026年3月29日",
+    "introTitle": "1. 简介",
+    "introText": "SkyRestrict Check\uff08\u201c\u6211\u4eec\u201d\uff09\u8fd0\u8425\u4f4d\u4e8e skyrestrict-check.vercel.app \u7684\u7f51\u7ad9\uff08\u201c\u670d\u52a1\u201d\uff09\u3002\u672c\u9690\u79c1\u653f\u7b56\u8bf4\u660e\u4e86\u6211\u4eec\u5728\u60a8\u8bbf\u95ee\u7f51\u7ad9\u65f6\u5982\u4f55\u6536\u96c6\u3001\u4f7f\u7528\u3001\u62ab\u9732\u548c\u4fdd\u62a4\u60a8\u7684\u4fe1\u606f\u3002\u4f7f\u7528\u672c\u670d\u52a1\u5373\u8868\u793a\u60a8\u540c\u610f\u6309\u7167\u672c\u653f\u7b56\u6536\u96c6\u548c\u4f7f\u7528\u4fe1\u606f\u3002",
+    "collectTitle": "2. 我们收集的信息",
+    "collectAuto": "自动收集的信息：",
+    "collectAutoText": "当您访问本服务时，我们可能会自动收集有关您设备的某些信息，包括您的 IP 地址、浏览器类型、操作系统、引荐 URL 和浏览页面。",
+    "collectVoluntary": "自愿提供的信息：",
+    "collectVoluntaryText": "如果您通过表单提交区域报告，我们会收集您提供的信息，包括区域名称、地区、描述、严重程度评估以及可选的电子邮件地址。",
+    "collectUsage": "使用数据：",
+    "collectUsageText": "我们追踪匿名访问者计数以了解受众并改进服务。",
+    "cookiesTitle": "3. Cookie 和跟踪技术",
+    "cookiesIntro": "我们使用 Cookie 和类似跟踪技术来增强您的体验。",
+    "cookiesEssential": "必要 Cookie：",
+    "cookiesEssentialText": "网站正常运行所必需。",
+    "cookiesAnalytics": "分析 Cookie：",
+    "cookiesAnalyticsText": "用于了解访问者如何与我们的网站交互。",
+    "cookiesAds": "广告 Cookie：",
+    "cookiesAdsText": "我们的广告合作伙伴可能使用 Cookie 投放个性化广告。",
+    "rightsTitle": "4. 您的权利",
+    "rightsText": "您可能有权访问、更正或删除您的个人数据。要行使这些权利，请通过以下方式联系我们：",
+    "contactTitle": "5. 联系我们",
+    "contactText": "如果您对本隐私政策有疑问，请通过以下方式联系我们："
+  },
+  "termsPage": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新：2026年3月29日",
+    "acceptTitle": "1. 接受条款",
+    "acceptText": "访问和使用 SkyRestrict Check\uff08\u201c\u670d\u52a1\u201d\uff09\u5373\u8868\u793a\u60a8\u540c\u610f\u53d7\u672c\u670d\u52a1\u6761\u6b3e\u7684\u7ea6\u675f\u3002\u5982\u679c\u60a8\u4e0d\u540c\u610f\uff0c\u8bf7\u52ff\u4f7f\u7528\u672c\u670d\u52a1\u3002",
+    "disclaimerTitle": "2. 重要免责声明",
+    "disclaimerWarning": "本服务不用于飞行计划或航空运营用途。",
+    "disclaimerText": "提供的信息来自各种公开来源，可能包含错误或过时信息。飞行员和航空运营商必须始终参考官方来源以获取权威空域信息。",
+    "liabilityTitle": "3. 责任限制",
+    "liabilityText": "本服务按\u201c现状\u201d提供，不附带任何形式的保证。在法律允许的最大范围内，SKYRESTRICT CHECK 不对因使用本服务而产生的任何损害承担责任。",
+    "contactTitle": "4. 联系方式",
+    "contactText": "如果您对本条款有疑问，请通过以下方式联系我们："
   }
 }

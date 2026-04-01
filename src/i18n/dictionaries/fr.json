@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "Langue"
+  },
+  "meta": {
+    "aboutTitle": "A propos de SkyRestrict Check — Suivi des zones d'exclusion aerienne",
+    "aboutDescription": "Decouvrez SkyRestrict Check, un outil gratuit de suivi en temps reel des zones d'exclusion aerienne et des espaces aeriens restreints avec carte interactive, alertes NOTAM et donnees aeronautiques en direct.",
+    "howToUseTitle": "Comment utiliser SkyRestrict Check — Guide & FAQ",
+    "howToUseDescription": "Guide etape par etape pour utiliser la carte interactive des zones d'exclusion aerienne, parcourir les alertes NOTAM et soumettre des rapports de zones. FAQ incluse.",
+    "privacyTitle": "Politique de confidentialite — SkyRestrict Check",
+    "privacyDescription": "Politique de confidentialite de SkyRestrict Check. Decouvrez comment nous collectons, utilisons et protegeons vos informations lors de l'utilisation de notre service de suivi des zones d'exclusion aerienne.",
+    "termsTitle": "Conditions d'utilisation — SkyRestrict Check",
+    "termsDescription": "Conditions d'utilisation de SkyRestrict Check. Avertissements importants sur la precision des donnees d'espace aerien et les limitations de responsabilite."
+  },
+  "privacyPage": {
+    "title": "Politique de confidentialite",
+    "lastUpdated": "Derniere mise a jour : 29 mars 2026",
+    "introTitle": "1. Introduction",
+    "introText": "SkyRestrict Check (\"nous\") exploite le site web skyrestrict-check.vercel.app (le \"Service\"). Cette politique de confidentialite explique comment nous collectons, utilisons, divulguons et protegeons vos informations lorsque vous visitez notre site. En utilisant le Service, vous acceptez la collecte et l'utilisation des informations conformement a cette politique.",
+    "collectTitle": "2. Informations que nous collectons",
+    "collectAuto": "Informations collectees automatiquement :",
+    "collectAutoText": "Lorsque vous accedez au Service, nous pouvons automatiquement collecter certaines informations sur votre appareil, notamment votre adresse IP, le type de navigateur, le systeme d'exploitation, les URL de reference et les pages consultees.",
+    "collectVoluntary": "Informations fournies volontairement :",
+    "collectVoluntaryText": "Si vous soumettez un rapport de zone via notre formulaire, nous collectons les informations que vous fournissez, y compris le nom de la zone, la region, la description, l'evaluation de la gravite et eventuellement votre adresse e-mail.",
+    "collectUsage": "Donnees d'utilisation :",
+    "collectUsageText": "Nous suivons le nombre de visiteurs anonymes pour comprendre notre audience et ameliorer le Service.",
+    "cookiesTitle": "3. Cookies et technologies de suivi",
+    "cookiesIntro": "Nous utilisons des cookies et des technologies de suivi similaires pour ameliorer votre experience.",
+    "cookiesEssential": "Cookies essentiels :",
+    "cookiesEssentialText": "Necessaires au bon fonctionnement du site web.",
+    "cookiesAnalytics": "Cookies analytiques :",
+    "cookiesAnalyticsText": "Utilises pour comprendre comment les visiteurs interagissent avec notre site.",
+    "cookiesAds": "Cookies publicitaires :",
+    "cookiesAdsText": "Nos partenaires publicitaires peuvent utiliser des cookies pour diffuser des annonces personnalisees.",
+    "rightsTitle": "4. Vos droits",
+    "rightsText": "Vous pouvez avoir le droit d'acceder, de corriger ou de supprimer vos donnees personnelles. Pour exercer l'un de ces droits, veuillez nous contacter a",
+    "contactTitle": "5. Nous contacter",
+    "contactText": "Si vous avez des questions sur cette politique de confidentialite, veuillez nous contacter a"
+  },
+  "termsPage": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Derniere mise a jour : 29 mars 2026",
+    "acceptTitle": "1. Acceptation des conditions",
+    "acceptText": "En accedant et en utilisant SkyRestrict Check (\"le Service\"), vous acceptez d'etre lie par ces conditions d'utilisation. Si vous n'etes pas d'accord, veuillez ne pas utiliser le Service.",
+    "disclaimerTitle": "2. Avertissements importants",
+    "disclaimerWarning": "CE SERVICE N'EST PAS DESTINE A LA PLANIFICATION DE VOLS OU A L'UTILISATION AERONAUTIQUE OPERATIONNELLE.",
+    "disclaimerText": "Les informations fournies sont compilees a partir de diverses sources publiques et peuvent contenir des erreurs ou des informations obsoletes. Les pilotes et les exploitants aeriens doivent toujours se referer aux sources officielles pour les informations faisant autorite sur l'espace aerien.",
+    "liabilityTitle": "3. Limitation de responsabilite",
+    "liabilityText": "LE SERVICE EST FOURNI \"TEL QUEL\" ET \"TEL QUE DISPONIBLE\" SANS GARANTIE D'AUCUNE SORTE. DANS LA MESURE MAXIMALE AUTORISEE PAR LA LOI, SKYRESTRICT CHECK NE SERA PAS RESPONSABLE DES DOMMAGES RESULTANT DE VOTRE UTILISATION DU SERVICE.",
+    "contactTitle": "4. Contact",
+    "contactText": "Pour toute question concernant ces conditions, veuillez nous contacter a"
   }
 }

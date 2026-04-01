@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import AdBanner from '@/components/layout/AdBanner';
 import DynamicMap from '@/components/map/DynamicMap';
@@ -8,11 +9,26 @@ import Card from '@/components/ui/Card';
 import { getNotams } from '@/lib/notam';
 import noFlyZonesData from '@/data/noFlyZones.json';
 import { getDictionary } from '@/i18n/getDictionary';
-import type { Locale } from '@/i18n/config';
+import { i18n, type Locale } from '@/i18n/config';
 
+const BASE_URL = 'https://skyrestrict-check.vercel.app';
 const AD_KEY_728x90 = '9efb95d6943d83714fd826945b7a94d7';
 const AD_KEY_320x50 = 'f8b13b800086425ff3446f71d1ee25e0';
 const AD_KEY_300x250 = 'cf2221eb1efd5678d9253fe0fe7684ff';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const alternates: Record<string, string> = {};
+  for (const l of i18n.locales) {
+    alternates[l] = `${BASE_URL}/${l}`;
+  }
+  return {
+    alternates: {
+      canonical: `${BASE_URL}/${lang}`,
+      languages: alternates,
+    },
+  };
+}
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;

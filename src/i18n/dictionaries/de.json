@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "Sprache"
+  },
+  "meta": {
+    "aboutTitle": "Über SkyRestrict Check — Flugverbotszonen-Tracker",
+    "aboutDescription": "Erfahren Sie mehr über SkyRestrict Check, einen kostenlosen Echtzeit-Tracker für Flugverbotszonen und eingeschränkte Lufträume mit interaktiver Karte, NOTAM-Warnungen und Live-Flugzeugdaten.",
+    "howToUseTitle": "So verwenden Sie SkyRestrict Check — Anleitung & FAQ",
+    "howToUseDescription": "Schritt-für-Schritt-Anleitung zur Nutzung der interaktiven Flugverbotszonen-Karte, zum Durchsuchen von NOTAM-Warnungen und zum Einreichen von Zonenberichten. Häufig gestellte Fragen inklusive.",
+    "privacyTitle": "Datenschutzrichtlinie — SkyRestrict Check",
+    "privacyDescription": "Datenschutzrichtlinie für SkyRestrict Check. Erfahren Sie, wie wir Ihre Informationen bei der Nutzung unseres Flugverbotszonen-Tracking-Dienstes sammeln, verwenden und schützen.",
+    "termsTitle": "Nutzungsbedingungen — SkyRestrict Check",
+    "termsDescription": "Nutzungsbedingungen für SkyRestrict Check. Wichtige Haftungsausschlüsse zur Genauigkeit der Luftraumdaten und Haftungsbeschränkungen."
+  },
+  "privacyPage": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: 29. März 2026",
+    "introTitle": "1. Einführung",
+    "introText": "SkyRestrict Check (\"wir\", \"uns\" oder \"unser\") betreibt die Website unter skyrestrict-check.vercel.app (der \"Dienst\"). Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen. Durch die Nutzung des Dienstes stimmen Sie der Erfassung und Verwendung von Informationen gemäß dieser Richtlinie zu.",
+    "collectTitle": "2. Von uns erfasste Informationen",
+    "collectAuto": "Automatisch erfasste Informationen:",
+    "collectAutoText": "Wenn Sie auf den Dienst zugreifen, können wir automatisch bestimmte Informationen über Ihr Gerät erfassen, einschließlich Ihrer IP-Adresse, Ihres Browsertyps, Betriebssystems, verweisender URLs und angesehener Seiten.",
+    "collectVoluntary": "Freiwillig bereitgestellte Informationen:",
+    "collectVoluntaryText": "Wenn Sie über unser Formular einen Zonenbericht einreichen, erfassen wir die von Ihnen bereitgestellten Informationen, einschließlich Zonenname, Region, Beschreibung, Schweregradeinschätzung und optional Ihre E-Mail-Adresse.",
+    "collectUsage": "Nutzungsdaten:",
+    "collectUsageText": "Wir verfolgen anonyme Besucherzahlen, um unser Publikum zu verstehen und den Dienst zu verbessern.",
+    "cookiesTitle": "3. Cookies und Tracking-Technologien",
+    "cookiesIntro": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Erfahrung zu verbessern.",
+    "cookiesEssential": "Wesentliche Cookies:",
+    "cookiesEssentialText": "Erforderlich für das ordnungsgemäße Funktionieren der Website.",
+    "cookiesAnalytics": "Analyse-Cookies:",
+    "cookiesAnalyticsText": "Werden verwendet, um zu verstehen, wie Besucher mit unserer Website interagieren.",
+    "cookiesAds": "Werbe-Cookies:",
+    "cookiesAdsText": "Unsere Werbepartner können Cookies verwenden, um personalisierte Anzeigen zu schalten.",
+    "rightsTitle": "4. Ihre Rechte",
+    "rightsText": "Sie haben möglicherweise das Recht, auf Ihre personenbezogenen Daten zuzugreifen, sie zu korrigieren oder zu löschen. Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter",
+    "contactTitle": "5. Kontaktieren Sie uns",
+    "contactText": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte unter"
+  },
+  "termsPage": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 29. März 2026",
+    "acceptTitle": "1. Annahme der Bedingungen",
+    "acceptText": "Durch den Zugriff auf und die Nutzung von SkyRestrict Check (\"der Dienst\") erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie nicht einverstanden sind, nutzen Sie den Dienst bitte nicht.",
+    "disclaimerTitle": "2. Wichtige Haftungsausschlüsse",
+    "disclaimerWarning": "DIESER DIENST IST NICHT FÜR DIE FLUGPLANUNG ODER DEN OPERATIVEN LUFTFAHRTBETRIEB BESTIMMT.",
+    "disclaimerText": "Die bereitgestellten Informationen stammen aus verschiedenen öffentlichen Quellen und können Fehler oder veraltete Informationen enthalten. Piloten und Flugbetreiber müssen immer offizielle Quellen für maßgebliche Luftrauminformationen konsultieren.",
+    "liabilityTitle": "3. Haftungsbeschränkung",
+    "liabilityText": "DER DIENST WIRD \"WIE BESEHEN\" UND \"WIE VERFÜGBAR\" OHNE JEGLICHE GARANTIEN BEREITGESTELLT. IM MAXIMAL GESETZLICH ZULÄSSIGEN UMFANG HAFTET SKYRESTRICT CHECK NICHT FÜR SCHÄDEN, DIE AUS IHRER NUTZUNG DES DIENSTES ENTSTEHEN.",
+    "contactTitle": "4. Kontakt",
+    "contactText": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte unter"
   }
 }

@@ -1,6 +1,34 @@
+import type { Metadata } from 'next';
 import Card from '@/components/ui/Card';
 import { getDictionary } from '@/i18n/getDictionary';
-import type { Locale } from '@/i18n/config';
+import { i18n, type Locale } from '@/i18n/config';
+
+const BASE_URL = 'https://skyrestrict-check.vercel.app';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as Locale);
+  const alternates: Record<string, string> = {};
+  for (const l of i18n.locales) {
+    alternates[l] = `${BASE_URL}/${l}/about`;
+  }
+  return {
+    title: dict.meta.aboutTitle,
+    description: dict.meta.aboutDescription,
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/about`,
+      languages: alternates,
+    },
+    openGraph: {
+      title: dict.meta.aboutTitle,
+      description: dict.meta.aboutDescription,
+      url: `${BASE_URL}/${lang}/about`,
+      siteName: 'SkyRestrict Check',
+      locale: lang,
+      type: 'website',
+    },
+  };
+}
 
 export default async function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;

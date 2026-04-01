@@ -16,11 +16,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of i18n.locales) {
     for (const page of pages) {
+      const alternateLanguages: Record<string, string> = {};
+      for (const l of i18n.locales) {
+        alternateLanguages[l] = `${baseUrl}/${l}${page.path}`;
+      }
+      alternateLanguages['x-default'] = `${baseUrl}/en${page.path}`;
+
       entries.push({
         url: `${baseUrl}/${locale}${page.path}`,
         lastModified: now,
         changeFrequency: page.changeFrequency,
         priority: page.priority,
+        alternates: {
+          languages: alternateLanguages,
+        },
       });
     }
   }

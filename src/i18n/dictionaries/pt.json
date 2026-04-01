@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "Idioma"
+  },
+  "meta": {
+    "aboutTitle": "Sobre o SkyRestrict Check — Rastreador de Zonas de Exclusao Aerea",
+    "aboutDescription": "Saiba mais sobre o SkyRestrict Check, um rastreador gratuito em tempo real de zonas de exclusao aerea e espacos aereos restritos com mapa interativo, alertas NOTAM e dados de aeronaves ao vivo.",
+    "howToUseTitle": "Como Usar o SkyRestrict Check — Guia e FAQ",
+    "howToUseDescription": "Guia passo a passo sobre como usar o mapa interativo de zonas de exclusao aerea, navegar pelos alertas NOTAM e enviar relatorios de zonas. Perguntas frequentes incluidas.",
+    "privacyTitle": "Politica de Privacidade — SkyRestrict Check",
+    "privacyDescription": "Politica de privacidade do SkyRestrict Check. Saiba como coletamos, usamos e protegemos suas informacoes ao usar nosso servico de rastreamento de zonas de exclusao aerea.",
+    "termsTitle": "Termos de Servico — SkyRestrict Check",
+    "termsDescription": "Termos de servico do SkyRestrict Check. Avisos importantes sobre a precisao dos dados de espaco aereo e limitacoes de responsabilidade."
+  },
+  "privacyPage": {
+    "title": "Politica de Privacidade",
+    "lastUpdated": "Ultima atualizacao: 29 de marco de 2026",
+    "introTitle": "1. Introducao",
+    "introText": "O SkyRestrict Check (\"nos\") opera o site em skyrestrict-check.vercel.app (o \"Servico\"). Esta Politica de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informacoes quando voce visita nosso site. Ao usar o Servico, voce concorda com a coleta e uso de informacoes de acordo com esta politica.",
+    "collectTitle": "2. Informacoes que Coletamos",
+    "collectAuto": "Informacoes coletadas automaticamente:",
+    "collectAutoText": "Ao acessar o Servico, podemos coletar automaticamente certas informacoes sobre seu dispositivo, incluindo endereco IP, tipo de navegador, sistema operacional, URLs de referencia e paginas visualizadas.",
+    "collectVoluntary": "Informacoes fornecidas voluntariamente:",
+    "collectVoluntaryText": "Se voce enviar um relatorio de zona por meio de nosso formulario, coletamos as informacoes que voce fornece, incluindo nome da zona, regiao, descricao, avaliacao de gravidade e, opcionalmente, seu endereco de e-mail.",
+    "collectUsage": "Dados de uso:",
+    "collectUsageText": "Rastreamos contagens anonimas de visitantes para entender nosso publico e melhorar o Servico.",
+    "cookiesTitle": "3. Cookies e Tecnologias de Rastreamento",
+    "cookiesIntro": "Usamos cookies e tecnologias de rastreamento semelhantes para melhorar sua experiencia.",
+    "cookiesEssential": "Cookies essenciais:",
+    "cookiesEssentialText": "Necessarios para o funcionamento adequado do site.",
+    "cookiesAnalytics": "Cookies analiticos:",
+    "cookiesAnalyticsText": "Usados para entender como os visitantes interagem com nosso site.",
+    "cookiesAds": "Cookies de publicidade:",
+    "cookiesAdsText": "Nossos parceiros de publicidade podem usar cookies para veicular anuncios personalizados.",
+    "rightsTitle": "4. Seus Direitos",
+    "rightsText": "Voce pode ter o direito de acessar, corrigir ou excluir seus dados pessoais. Para exercer qualquer um desses direitos, entre em contato conosco em",
+    "contactTitle": "5. Fale Conosco",
+    "contactText": "Se voce tiver duvidas sobre esta Politica de Privacidade, entre em contato conosco em"
+  },
+  "termsPage": {
+    "title": "Termos de Servico",
+    "lastUpdated": "Ultima atualizacao: 29 de marco de 2026",
+    "acceptTitle": "1. Aceitacao dos Termos",
+    "acceptText": "Ao acessar e usar o SkyRestrict Check (\"o Servico\"), voce concorda em ficar vinculado a estes Termos de Servico. Se voce nao concordar, por favor nao use o Servico.",
+    "disclaimerTitle": "2. Avisos Importantes",
+    "disclaimerWarning": "ESTE SERVICO NAO SE DESTINA AO PLANEJAMENTO DE VOOS OU USO OPERACIONAL DA AVIACAO.",
+    "disclaimerText": "As informacoes fornecidas sao compiladas de varias fontes publicas e podem conter erros ou informacoes desatualizadas. Pilotos e operadores de voo devem sempre consultar fontes oficiais para informacoes autorizadas sobre o espaco aereo.",
+    "liabilityTitle": "3. Limitacao de Responsabilidade",
+    "liabilityText": "O SERVICO E FORNECIDO \"COMO ESTA\" E \"CONFORME DISPONIVEL\" SEM GARANTIAS DE QUALQUER TIPO. NA MAXIMA EXTENSAO PERMITIDA POR LEI, O SKYRESTRICT CHECK NAO SERA RESPONSAVEL POR QUAISQUER DANOS DECORRENTES DO USO DO SERVICO.",
+    "contactTitle": "4. Contato",
+    "contactText": "Para perguntas sobre estes Termos, entre em contato conosco em"
   }
 }

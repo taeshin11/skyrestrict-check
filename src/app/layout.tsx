@@ -68,6 +68,19 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://skyrestrict-check.vercel.app',
+    languages: {
+      'en': 'https://skyrestrict-check.vercel.app/en',
+      'ko': 'https://skyrestrict-check.vercel.app/ko',
+      'ja': 'https://skyrestrict-check.vercel.app/ja',
+      'zh': 'https://skyrestrict-check.vercel.app/zh',
+      'es': 'https://skyrestrict-check.vercel.app/es',
+      'fr': 'https://skyrestrict-check.vercel.app/fr',
+      'de': 'https://skyrestrict-check.vercel.app/de',
+      'ar': 'https://skyrestrict-check.vercel.app/ar',
+      'ru': 'https://skyrestrict-check.vercel.app/ru',
+      'pt': 'https://skyrestrict-check.vercel.app/pt',
+      'x-default': 'https://skyrestrict-check.vercel.app/en',
+    },
   },
   icons: {
     icon: [

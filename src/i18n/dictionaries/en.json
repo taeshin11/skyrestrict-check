@@ -188,5 +188,53 @@
   },
   "languagePicker": {
     "label": "Language"
+  },
+  "meta": {
+    "aboutTitle": "About SkyRestrict Check — No-Fly Zone Tracker",
+    "aboutDescription": "Learn about SkyRestrict Check, a free real-time no-fly zone and restricted airspace tracker with interactive map, NOTAM alerts, and live aircraft data.",
+    "howToUseTitle": "How to Use SkyRestrict Check — Guide & FAQ",
+    "howToUseDescription": "Step-by-step guide on using the interactive no-fly zone map, browsing NOTAM alerts, and submitting zone reports. Frequently asked questions included.",
+    "privacyTitle": "Privacy Policy — SkyRestrict Check",
+    "privacyDescription": "Privacy policy for SkyRestrict Check. Learn how we collect, use, and protect your information when you use our no-fly zone tracking service.",
+    "termsTitle": "Terms of Service — SkyRestrict Check",
+    "termsDescription": "Terms of service for SkyRestrict Check. Important disclaimers about airspace data accuracy and limitations of liability."
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 29, 2026",
+    "introTitle": "1. Introduction",
+    "introText": "SkyRestrict Check (\"we,\" \"our,\" or \"us\") operates the website at skyrestrict-check.vercel.app (the \"Service\"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. By using the Service, you agree to the collection and use of information in accordance with this policy.",
+    "collectTitle": "2. Information We Collect",
+    "collectAuto": "Automatically Collected Information:",
+    "collectAutoText": "When you access the Service, we may automatically collect certain information about your device, including your IP address, browser type, operating system, referring URLs, and pages viewed.",
+    "collectVoluntary": "Voluntarily Provided Information:",
+    "collectVoluntaryText": "If you submit a zone report through our form, we collect the information you provide, including zone name, region, description, severity assessment, and optionally your email address.",
+    "collectUsage": "Usage Data:",
+    "collectUsageText": "We track anonymous visitor counts to understand our audience and improve the Service.",
+    "cookiesTitle": "3. Cookies and Tracking Technologies",
+    "cookiesIntro": "We use cookies and similar tracking technologies to enhance your experience.",
+    "cookiesEssential": "Essential Cookies:",
+    "cookiesEssentialText": "Required for the website to function properly.",
+    "cookiesAnalytics": "Analytics Cookies:",
+    "cookiesAnalyticsText": "Used to understand how visitors interact with our website.",
+    "cookiesAds": "Advertising Cookies:",
+    "cookiesAdsText": "Our advertising partners may use cookies to serve personalized ads.",
+    "rightsTitle": "4. Your Rights",
+    "rightsText": "You may have the right to access, correct, or delete your personal data. To exercise any of these rights, please contact us at",
+    "contactTitle": "5. Contact Us",
+    "contactText": "If you have questions about this Privacy Policy, please contact us at"
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 29, 2026",
+    "acceptTitle": "1. Acceptance of Terms",
+    "acceptText": "By accessing and using SkyRestrict Check (\"the Service\"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Service.",
+    "disclaimerTitle": "2. Important Disclaimers",
+    "disclaimerWarning": "THIS SERVICE IS NOT INTENDED FOR FLIGHT PLANNING OR OPERATIONAL AVIATION USE.",
+    "disclaimerText": "The information provided is compiled from various public sources and may contain errors or outdated information. Pilots and flight operators must always refer to official sources for authoritative airspace information.",
+    "liabilityTitle": "3. Limitation of Liability",
+    "liabilityText": "THE SERVICE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY LAW, SKYRESTRICT CHECK SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM YOUR USE OF THE SERVICE.",
+    "contactTitle": "4. Contact",
+    "contactText": "For questions about these Terms, please contact us at"
   }
 }

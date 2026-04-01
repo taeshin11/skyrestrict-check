@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://skyrestrict-check.vercel.app'),
   title: {
-    default: 'SkyRestrict Check — Real-Time No-Fly Zone & Restricted Airspace Map 2026',
+    default: 'SkyRestrict Check — Real-Time No-Fly Zone & Restricted Airspace Map 2025',
     template: '%s | SkyRestrict Check',
   },
   description:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'real-time flight tracker', 'NOTAM search', 'aviation news', 'flight route safety',
     'is it safe to fly', 'conflict zone flights', 'airline route restrictions',
     'airspace closure', 'flight ban', 'temporary flight restriction', 'TFR',
-    'global no-fly zones 2026', 'restricted airspace map 2026',
+    'global no-fly zones 2025', 'restricted airspace map 2025',
   ],
   openGraph: {
     title: 'SkyRestrict Check — Free No-Fly Zone & Airspace Restriction Tracker',

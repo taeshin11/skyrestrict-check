@@ -103,6 +103,7 @@ export default function RootLayout({
   return (
     <html className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`} suppressHydrationWarning>
       <head>
+        <meta name="naver-site-verification" content="0ec7969ab180ac8e61e017eb5aa684f46c1867ef" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021"
